@@ -2,11 +2,16 @@
 
     "express": {
         "view cache": false,
-        "view engine": "dust",
+        "view engine": "ejs",
         "views": "path:./public/templates"
     },
 
     "view engines": {
+       "ejs": {
+            "name": "ejs",
+            "module": "ejs",
+            "renderer": "renderFile"
+        },      
         "dust": {
             "module": "engine-munger",
             "renderer": {

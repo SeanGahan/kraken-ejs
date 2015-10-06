@@ -6,6 +6,11 @@
     },
 
     "view engines": {
+       "html": {
+            "name": "ejs",
+            "module": "ejs",
+            "renderer": "renderFile"
+        },
         "js": {
             "module": "engine-munger",
             "renderer": {

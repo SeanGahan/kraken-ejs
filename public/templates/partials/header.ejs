@@ -1,0 +1,17 @@
+    <div class="wrapper">
+        <h1>Kraken Central</h1>
+        <nav>
+            <ul class="nm-np inline">
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/admin">Admin</a></li>
+                <li>                        
+                    <% if(auth == true){ %>
+                       <a href="/Logout">Logout</a>
+                     <% } else{ %>  
+                       <a href="/login">Login</a>
+                    <% } %>                          
+                </li>
+            </ul>
+        </nav>
+    </div>

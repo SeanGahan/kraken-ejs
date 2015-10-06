@@ -15,8 +15,13 @@ module.exports = function (router) {
 
 
     router.get('/', function (req, res) {
-        res.render('index', indexmodel);
+        res.render('index', {
+        indexmodel: indexmodel,
+        profilemodel: profilemodel,
+        auth: auth
     });
+    
+    });//router.get
 
 
     router.get('/profile', function(req, res) {
