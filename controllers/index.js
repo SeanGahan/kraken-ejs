@@ -15,23 +15,34 @@ module.exports = function (router) {
 
 
     router.get('/', function (req, res) {
-        res.render('index', {
-        indexmodel: indexmodel,
-        profilemodel: profilemodel,
-        auth: auth
-    });
-    
+            res.render('index', {
+            indexmodel: indexmodel,
+            profilemodel: profilemodel,
+            auth: auth
+        });
     });//router.get
 
 
     router.get('/profile', function(req, res) {
-        res.render('profile', profilemodel);
+        res.render('profile', {
+        indexmodel: indexmodel,
+        profilemodel: profilemodel,
+        auth: auth
     });
+    })
 
 
     router.get('/admin', function(req, res) {
         res.render('admin', adminmodel);
     });
+
+    router.get('/login', function (req, res) {
+        res.render('login', {
+        indexmodel: indexmodel,
+        profilemodel: profilemodel,
+        auth: auth
+    });
+    });//router.get login
 
     /**
      * Allow the users to log out
@@ -39,6 +50,6 @@ module.exports = function (router) {
     router.get('/logout', function (req, res) {
         req.logout();
         res.redirect('/login');
-    });
+    });    
 
 };

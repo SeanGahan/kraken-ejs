@@ -13,7 +13,7 @@ module.exports = function (router) {
     /**
      * Display the login page. We also want to display any error messages that result from a failed login attempt.
      */
-    router.get('/', function (req, res) {
+     router.get('/', function (req, res) {
 
         //Include any error messages that come from the login process.
         model.messages = req.flash('error');
@@ -34,7 +34,7 @@ module.exports = function (router) {
             failureRedirect: '/login',
             failureFlash: true
         })(req, res);
-
+//profile
     });
 
 
