@@ -1,11 +1,13 @@
     <div class="wrapper">
-        <h1>A System</h1>
+        <h1>kraken and ejs</h1>
         <nav>
             <ul class="nm-np inline">
                 <li><a href="/">Home</a></li>
                 <li><a href="/profile">Profile</a></li>
                 <li><a href="/admin">Admin</a></li>
-                <li>                        
+                <li>          
+                <script> document.write(auth);</script>
+                              
                     <% if(auth == true){ %>
                        <a href="/Logout">Logout</a>
                      <% } else{ %>  

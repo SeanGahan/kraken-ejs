@@ -33,7 +33,12 @@ module.exports = function (router) {
 
 
     router.get('/admin', function(req, res) {
-        res.render('admin', adminmodel);
+        res.render('admin', {
+        indexmodel: indexmodel,
+        profilemodel: profilemodel,
+        auth: auth,
+        adminmodel:adminmodel
+    });
     });
 
     router.get('/login', function (req, res) {

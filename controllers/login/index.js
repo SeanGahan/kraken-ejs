@@ -34,7 +34,7 @@ module.exports = function (router) {
             failureRedirect: '/login',
             failureFlash: true
         })(req, res);
-//profile
+
     });
 
 
