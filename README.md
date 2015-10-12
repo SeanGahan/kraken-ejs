@@ -1,4 +1,12 @@
 <<<<<<< HEAD
+
+# kraken-ejs
+kraken with the ejs engine originally taken from https://github.com/krakenjs/kraken-example-with-passport.git
+
+Below are the original notes:
+
+
+
 # with.passport
 
 A simple application that manages users with [passport](http://passportjs.org/) and [KrakenJS](http://www.krakenjs.com)
@@ -57,6 +65,4 @@ Try logging in with each user and clicking around on the links again. Note that 
 * Document configuring passport
 * Document configuring crypto
 =======
-# kraken-ejs
-kraken with the ejs engine
->>>>>>> 52cb4582eafc9752821d38167b9a807e5697e2ea
+
